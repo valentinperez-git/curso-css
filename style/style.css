@@ -1,0 +1,46 @@
+/* SELECTORES DE ELEMENTOS */
+h1{
+    color: rebeccapurple;
+}
+
+h2{color: chartreuse;
+}
+
+h3{
+    background-color: black;
+}
+
+/* SELECTOR ID */
+#titulo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+#parrafo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: end;
+}
+/* SELECTOR CLASE */
+.seccion1{
+    text-align: end;
+    background-color: blue;
+}
+
+.seccion2{
+    background-color: black;
+    color: antiquewhite;
+}
+
+/* SELECTOR CLASES CONVINADAS */
+.seccion2.otro{
+    text-align: end;
+}
+
+h3.seccion3{
+    background-color: antiquewhite;
+}
+
+/* CON ALT + FLECHAS MOVES COMENTARIO */
+
+ul{
+    display: inline-block;
+}

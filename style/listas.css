@@ -1,0 +1,159 @@
+/* PRIMERA PARTE */
+/* LISTAS */
+
+ul{
+    background-color: black;
+    padding: 20px;
+}
+
+li{
+    color: aliceblue;
+    background-color: olive;
+    padding: 20px;
+}
+
+/* SEGUNDA PARTE */
+/* TABLAS */
+tr,td{
+    border: 6px solid coral;
+    width: 200px;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+}
+table,th{
+    border: 10px solid olive;
+    height: 200px;
+}   
+
+/* PINTA DE COLOR LAS COLUMNAS */
+/* .primera{
+    width: 200px;
+    border: 10px solid olive;
+    background-color: brown;
+}
+
+.secunda{
+
+    background-color: blueviolet;
+}
+.tercera{
+    background-color: aquamarine;
+}
+.cuarta{
+    background-color: orangered;
+} */
+
+tr:nth-child(even){
+    background-color: aqua;
+}
+tr:nth-child(odd){
+    background-color: blue;
+} 
+/* HACE HOVER EN TODO MENOS PRIMER RENGLON */
+table tr:not(:first-child):hover {
+    background-color: olive;
+}
+
+header{
+    display: flex;
+} 
+/* TERCER PARTE */
+.cajita1{
+    margin-top: 15px;
+    width: 100px;
+    height: 100px;
+    background-color: olive;
+    border:1px solid rgb(84, 84, 4);
+    display: inline; /* DIV ES EN BLOQUE Y INLINE LO CONVIERTE EN LINEA */
+}
+.cajita2{
+    margin-top: 15px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(35, 123, 57);
+    border:1px solid rgb(202, 202, 100);
+    display: inline;
+}
+.cajita3{
+    margin-top: 15px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(105, 70, 232);
+    border:1px solid rgb(255, 0, 157);
+    display: inline;
+}
+.box1{
+    margin-top: 15px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(58, 204, 248);
+    border:1px solid rgb(0, 0, 0);
+    display: block;/* SPAN ES EN LINEA Y BLOCK LO HACE EN BLOQUE */
+}
+.box2{
+    margin-top: 15px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(28, 28, 18);
+    border:1px solid rgb(226, 226, 9);
+    display: block;
+    visibility: hidden;/* ESTA ESCONDIDO */
+}
+.box3{
+    margin-top: 15px;
+    /* width: 100px; */
+    height: 100px;
+    background-color: rgb(52, 70, 67);
+    border:1px solid rgb(231, 19, 19);
+    display: block;
+    display: none;/* NO ESTÀ */
+}
+
+/* CUARTA */
+.container1{
+    position: absolute;/* POSICIONES: STATIC, FIXED, RELATIVE, ABSOLUTE Y STICKY */
+    border: 12px solid greenyellow;
+    bottom: 0;
+    right: 0;
+    display: inline;
+    margin-left: 15px;
+}
+.container2{
+    position: fixed;/* POSICIONES: STATIC, FIXED, RELATIVE, ABSOLUTE Y STICKY */
+    border: 12px solid greenyellow;
+    bottom: 0;
+    right: 0;
+    display: inline;
+    margin-left: 15px;
+}
+.container3{
+    position: relative;/* POSICIONES: STATIC, FIXED, RELATIVE, ABSOLUTE Y STICKY */
+    border: 12px solid greenyellow;
+    bottom: 0;
+    right: 0;
+    display: inline;
+    margin-left: 15px;
+}
+.container4{
+    position: sticky;/* POSICIONES: STATIC, FIXED, RELATIVE, ABSOLUTE Y STICKY */
+    border: 12px solid greenyellow;
+    top: 0;
+    display: inline;
+    margin-left: 15px;
+    background-color: black;
+}
+.container5{
+    position: static;/* POSICIONES: STATIC, FIXED, RELATIVE, ABSOLUTE Y STICKY */
+    border: 12px solid greenyellow;
+    bottom: 0;
+    right: 0;
+    display: inline;
+    margin-left: 15px;
+}
+.parrafo{
+    position: relative;
+    bottom: 25px;
+    display: inline;
+}

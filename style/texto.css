@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(107, 107, 176);
+    font-size: 1.5em;
+}
+h1{
+    color: darkseagreen;
+    text-align: center;
+    text-shadow: 2px 12px 4px olive;/* SOMBRA */
+    font-family: 'Lugrasimo', cursive;
+}
+h2{
+    color: hotpink;
+    text-align: center;
+    text-shadow: 42px 5px 5px gray;
+    font-family: 'Tektur', cursive;
+}
+p{
+    color: gold;
+    text-align: justify;
+    font-style: italic;/* cursiva */
+    font-weight: bold;/* negrita */
+    font-variant: small-caps;
+}
+b, i{
+    color: limegreen;
+}
+
+.overline{
+    text-decoration-line: overline;     
+    text-decoration-color: rgb(77, 109, 109);
+}
+
+.line-througt{
+    text-decoration-line: line-through;
+    text-decoration-color: rgb(46, 88, 46);
+    text-decoration-style: wavy;
+}
+
+.underline{
+    text-decoration-line: underline;  
+    text-decoration-color: rgb(79, 13, 159);  
+}   
+/* SEGUNDA OPTIMIZADA */
+.overline2{
+    text-decoration: overline red 5px wavy;
+}
+
+.line-througt2{
+    text-decoration: line-through red 5px dotted;
+}
+
+.underline2{
+    text-decoration: underline red 5px;
+}   
+
+/* TERCERA */
+.trans{
+    /* text-transform: uppercase;text-indent: 500px; */
+    line-height: 0.3;/* NO PUEDE IR EN NEGATIVO */
+}
+.trans1{
+    text-transform: lowercase;
+    letter-spacing: 50px;
+    line-height: 2;
+    word-spacing: -133px;
+}
+.trans2{
+    text-transform: capitalize;
+    letter-spacing: -2px;
+}
+.trans3{
+    text-transform: none;
+    word-spacing: 152px;
+}

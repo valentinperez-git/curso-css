@@ -1,0 +1,24 @@
+/* GRADIENTE */
+body{
+    /* background: linear-gradient(90deg, #fff 0%, red 20%, olive 63%, blue 100%);
+    background-image:url(/assets/img/dante-inferno.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    ES LO MISMO*/
+    background: #000 url(/assets/img/dante-inferno.jpg) no-repeat bottom fixed;
+}
+
+/* COLORES */
+h1{
+background-color: rgba(128, 128, 0, 0.305);/* COLORES RED GREEN BLUE Y ALPHA(OPACIDAD) */
+color: rgba(64, 166, 166, 0.355);
+}
+
+h2{
+    background-color: #7e202086;/* COLORES HEXAGECIMAL */
+    color: #ffffff5d;
+}
+
+h3{
+    background-color: hsl(0, 100%, 50%)/* HSL: HUE, SATURAQTION, LIGHTNESS Y ALPHA */
+}

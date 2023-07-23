@@ -1,0 +1,111 @@
+.container{
+    position: relative;
+    display: inline-block;
+}
+img{
+    width:100%;
+    /* height: auto; */
+}
+.texto{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: white; */
+
+    position: absolute;
+    top: 50%; /* Ajusta la posición vertical del texto */
+    left: 50%; /* Ajusta la posición horizontal del texto */
+    transform: translate(-50%, -50%); /* Centra el texto */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo transparente con opacidad */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espacio alrededor del texto */
+}
+h1{
+    position: absolute;
+    font-size: 100px;
+    z-index: 0;
+    bottom: -2500px;
+}
+
+.adelante{
+    z-index: 1;
+    position: relative;/* RELATIVE TE PERMITE MOVER LA IMG */
+    width: 250px;
+    bottom:1500px;
+}
+
+.container1{
+    position: absolute;
+    background-color: brown;
+    width: 300px;
+    height: 300px;
+    overflow: scroll;
+    overflow-x: hidden;/* OCULTA SCROLL DE X */
+}
+
+.joker{
+    float: right;
+    max-width: 100px;
+    padding: 5px 5px 0px 0px;
+}
+.contenedor_imagenes{
+    display: flex;
+}
+
+.container2{ 
+    margin: 1px;
+    margin-left:50px;
+    padding: 10px;
+    border: 1px solid olive;
+    position: relative;
+}
+
+div>p{/* EL SIMBOLO > HACE QUE SOLO SEA A LOS HIJOS, NO NIETOS */
+    background-color: darkgoldenrod;
+}
+
+div{
+    background-color: lightslategrey;
+}
+
+div+p{/* MARCA LOS P PRIMER HERMANO ADYACENTE */
+    background-color: salmon;
+}
+
+div~p{ /* LOS HERMANOS DEL DIV QUE SON P */
+    background-color: chartreuse;
+}
+
+a:link{
+    background-color: darkslateblue;
+    color: aqua;
+    text-decoration: aqua;
+}
+
+a:hover{
+    color: black;
+    background-color: black;
+}
+a:visited{
+    /* background-color: rgb(0, 0, 0); */
+    color: aqua;
+    text-decoration: aqua;
+}
+a:active{
+    background-color: blue;
+}
+
+p{
+    display: none;
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+div:hover p{
+    display: block;
+}
+
+p:first-child{
+    background-color: blueviolet;
+}

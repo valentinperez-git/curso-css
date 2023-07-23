@@ -1,0 +1,102 @@
+.contenedor{
+    overflow: auto;
+}
+.leftside{
+    float: none;
+    width: auto;
+}
+
+.texto{
+    position: absolute;
+    top: 0;
+    color: brown;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@media(min-width:545px){
+    .leftside{
+        float: left;
+        width: 300px;
+    }
+    img{
+        width: 300px;
+    }
+    
+    .texto{
+        position: static;
+    }
+}
+
+@media (max-height:500px) and (max-width:900px){
+    body{
+        background-color: olive;
+    }
+
+}
+/* SPACE AROUN Y BETWEEN SON IMPORTANTISIMOS */
+.flex-container{
+    display: flex;
+    background-color: brown;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 500px;
+    align-items: center;
+}
+.flex-container > div{
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+}
+.flex-container > div:not(.distinta){
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+}
+/* .distinta{
+    width: auto !important;  NO ES BUENA PRACTICA USAR EL IMPORTANT 
+    height: auto !important;
+}
+*/
+.distinta{
+    width: 75px; /* FORMA CORRECTA SIN USAR EL IMPORTANT */
+    height: 75px;
+}
+/* GRID */
+.grid-container{
+    display: grid;
+    background-color: brown;
+/*     grid-template-columns: auto auto auto; */
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: auto auto auto;
+    justify-items: start;
+    grid-auto-flow: column;
+
+}
+.grid-container > div{
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+}
+.grid-container > div:not(.distint2){
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+}
+/* .distint2{
+    width: auto !important;  NO ES BUENA PRACTICA USAR EL IMPORTANT 
+    height: auto !important;
+}
+*/
+.distint2{
+/*     width: 75px; /* FORMA CORRECTA SIN USAR EL IMPORTANT 
+    height: 75px; */
+}

@@ -1,0 +1,53 @@
+body{
+    background-color: bisque;
+}
+ul{
+    display: inline-block;
+}
+
+input:focus{
+    background-color: darkseagreen;
+}
+p::first-letter{
+    font-size: 3em;
+    color: rgb(65, 230, 255);
+}
+
+p::first-line{
+    color: red;
+}
+
+p.segundoParrafo::first-line{
+    color: olive;
+}
+
+p.segundoParrafo::first-letter{
+    font-size: 7em;
+    color: crimson;
+}
+
+h1::before{
+    content: url("/assets/img/icon.png");
+}
+h1::after{
+    content: url(/assets/img/smile.png);
+}
+
+::marker{
+    color: red;
+    font-size: 3em;
+}
+
+::selection{
+    background-color: olive;
+    color: rgb(225, 30, 62);
+}
+
+img{
+    opacity: 0.5;
+    position: absolute;
+}
+
+img:hover{
+    opacity: 1;
+}

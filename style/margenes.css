@@ -1,0 +1,102 @@
+/* MARGIN */
+.contenedor1{
+    display: flex;
+}
+
+.cajita1{
+    height: 300px;
+    width: 300px;
+    border: 5px solid black;
+    background-color: olivedrab;
+    margin: 12 px;
+}
+.cajita2{
+    height: 300px;
+    width: 300px;
+    border: 5px solid black;
+    background-color: olivedrab;
+    margin: 12px 12px;
+}
+.cajita3{
+    height: 300px;
+    width: 300px;
+    border: 5px solid black;
+    background-color: olivedrab;
+    margin: 20px 20px 10px ;
+}
+/* PADDING */
+.cajita4{
+    border-style: dashed;
+    border-color: blueviolet;
+    border-width: 50px;
+    border-radius: 170%;
+    padding: 13px;
+}
+.cajita5{
+    border-style: dashed;
+    border-color: blueviolet;
+    border-width: 50px;
+    border-radius: 170%;
+    padding-bottom: 123px;
+}
+.cajita6{
+    border-style: dashed;
+    border-color: blueviolet;
+    border-width: 50px;
+    border-radius: 170%;
+    padding-right: 132px;
+}
+/* MAS CAJAS */
+.contenedor2{
+    display: flex;
+}
+
+.cajita7{
+    border: 2px solid black;
+    background-color: olive;
+    color: rgb(0, 0, 0);
+    min-height: 100px;
+    width: 100px;
+}
+.cajita8{
+    border: 2px solid black;
+    background-color: rgb(202, 14, 14);
+    color: rgb(140, 140, 11);
+    max-height: 500px;
+    min-width: 500px;
+}
+.cajita9{
+    border: 2px solid black;
+    background-color: rgb(59, 33, 206);
+    color: beige;
+    min-height: 100px;
+    max-width: 100px;
+}
+
+.contenedor3{
+    display: flex;
+    margin: 10px;
+}
+
+.cajita10{
+    border: 2px solid black;
+    background-color: olive;
+    color: rgb(0, 0, 0);
+    max-height: 100px;
+    width: 100px;
+}
+
+.cajita11{
+    border: 2px solid black;
+    background-color: rgb(202, 14, 14);
+    color: rgb(140, 140, 11);
+    max-height: 500px;
+    min-width: 500px;
+}
+.cajita12{
+    border: 2px solid black;
+    background-color: rgb(59, 33, 206);
+    color: beige;
+    height: 100px;
+    min-width: 100px;
+}

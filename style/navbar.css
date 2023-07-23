@@ -1,0 +1,209 @@
+body{
+    background-color: black;
+    color: aliceblue;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+li{
+    float: left;
+    border-right: 2px solid rgb(225, 6, 90);
+}
+
+li:last-child{
+    border-right: none;
+}
+
+li a{
+    display: block;
+    color: olive;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.navbar{
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-lista {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-items {
+width: 100px; /* Ancho fijo para cada elemento de la barra de navegación */
+text-align: center; /* Centra el texto horizontalmente en cada elemento */
+}
+
+.navbar-items a {
+display: block;
+color: #fff; /* Color del texto */
+text-decoration: none;
+padding: 10px; /* Espacio interno alrededor del texto para mejor apariencia */
+}
+
+.navbar-items a:hover {
+background-color: #555; /* Color de fondo al pasar el cursor sobre el enlace */
+}
+.navbar-item2 {
+width: 100px; /* Ancho fijo para cada elemento de la barra de navegación */
+text-align: center; /* Centra el texto horizontalmente en cada elemento */
+}
+
+.navbar-item2 a {
+display: block;
+color: #fff; /* Color del texto */
+text-decoration: none;
+padding: 10px; /* Espacio interno alrededor del texto para mejor apariencia */
+}
+
+/* .navbar-item2 a:hover {
+background-color: #555; /* Color de fondo al pasar el cursor sobre el enlace 
+}*/
+
+.navbar-lista2 {
+display: flex;
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.active{
+background-color: olive;
+}
+
+/* li a:hover{
+background-color: cornflowerblue;
+} */
+
+li a:hover:not(.active){
+    background-color: orangered;
+}
+
+a[target="_blank"]{
+    background-color: #555;    
+}
+input[type="text"]{
+    background-color: #851515;  
+    color: aliceblue; 
+}
+
+img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    width: 500px;
+    transition: opacity 2s ease-in-out 0.3s, width 5s linear;
+}
+@keyframes image{
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* img:hover{
+    animation-name: image;
+    animation-duration: 2s;
+} */
+
+@keyframes cuadradito{
+    0%{
+        background-color: red; left: 0; top: 0;
+    }
+    25%{
+        background-color: blue; left: 200px; top: 50px;
+    }
+    50%{
+        background-color: rgb(0, 255, 213); right: 702px; bottom: 507px;
+    }
+    75%{
+        background-color: blue; top: 200px; right: 50px;
+    }
+    100%{
+        background-color: blue; left: 3470px; top: 507px;
+    }
+}
+.cuadradito{
+    border: 2px solid rgb(218, 204, 204);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: cuadradito;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes circulito{
+    from{
+        background-color: #851515;
+        left: 0;
+    }
+    to{
+        background-color: aqua;
+        left: 200px;
+    }
+}
+.circulito{
+    border: 2px solid rgb(218, 204, 204);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: circulito 5s ease-in-out 2s infinite alternate;
+}
+.circulito2{
+    border: 2px solid rgb(218, 204, 204);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: circulito 5s linear 2s infinite alternate;
+}
+.circulito3{
+    border: 2px solid rgb(218, 204, 204);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: circulito 5s ease 2s infinite alternate;
+}
+.circulito4{
+    border: 2px solid rgb(218, 204, 204);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: circulito 5s ease-in 2s infinite alternate;
+}
+.circulito5{
+    border: 2px solid rgb(218, 204, 204);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: circulito 5s ease-out 2s infinite alternate;
+}
+
+img:hover{
+    opacity: 0.5;
+
+    width: 100%;
+
+    /*ES LO MISMO 
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;
+ */
+}
